@@ -1,0 +1,175 @@
+<!DOCTYPE html>   <!--specify the version of html the page is written in-->
+
+<html>
+
+    <head>
+        <title>Mohamad Portfolio</title>
+    </head>
+
+
+    <body>
+
+        <!--Name - postion -  picture-->
+        <section>
+            <h1>
+                Hello, I am <strong>Mohamad Haj Hassan</strong>
+            </h1>
+
+            <p>SE Factory trainee</p>
+
+            <img 
+                src="images/img01.jpg" 
+                alt="A photo of Mohamad Haj Hassan"  
+                width="25%" 
+                height="10%"> <!--alternative attribute for image is set for screen readers and in case the image couldn't load-->
+        </section>
+        
+
+        <!--Introduction-->
+        <section>
+            <h2>Who I am</h2>
+            <p>
+                I am a student at SE Factory 21st Full Stack Web Developpement BootCamp.<br>
+                I joined the BootCamp to learn about Developpement and become a software engineer.<br>
+                I studied electrical and computer engineering at Lebanese University 
+                which introduces me to coding and make me realise how passionate I am about it.
+            </p>
+        </section>
+        <hr>
+
+
+        <!--Ask me a question-->
+        <section>
+            <h2>Have a question for me?</h2>
+
+            <form action="" id = "question-form">
+
+                <div>
+                    <label for="related-topic">Specify the topic of your question</label>
+                    <br>
+                    <select 
+                        name="related-topic" 
+                        id="related-topic"
+                        form="question-form" 
+                        required>
+                            <option value="Coding">Coding</option>
+                            <option value="SE Factory">SE Factory</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Electical and Computer Engineering">Electical and Computer Engineering</option>
+                            <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <label for="email-address">Your email address (so I can reach out to you)</label>
+                    <br>
+                    <input
+                        name="email-address"
+                        id="email-address" 
+                        type="email"
+                        placeholder="Enter your email here."
+                        required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="question">Your question</label>
+                    <br>
+                    <input 
+                        name="question" 
+                        id="question" 
+                        type="text" 
+                        placeholder="Enter your question here." 
+                        required>
+                </div>
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr>
+
+
+        <!--Tell me anything-->
+        <section>
+            <h2>Tell me anything anonymously</h2>
+
+            <form action="" id = "anonymously-form">
+                <div>
+                    <label for="anonymously-form">
+                        What do you have in mind? This space is for you. (opinions, ideas, comments, suggestions ...)
+                    </label>
+                    <br>
+                    <textarea 
+                            name="tell-me"
+                            id="tell-me"
+                            type="text" 
+                            placeholder="You can type here" 
+                            rows="5" 
+                            cols="80" 
+                            form="anonymously-form"
+                            required>
+                    </textarea>
+                </div>
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr>
+
+
+        <!--Information about me-->
+        <section>
+            <h2>More about me</h2>
+            
+            <div>
+                <label for="hobbies"><h3>My hobbies</h3></label>
+                <ul id="hobbies">
+                    <li>Coding</li>
+                    <li>Video Games</li>
+                    <li>Reading</li>
+                    <li>Watching Movies</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>My work</h3>
+                <p>
+                    In the domain of programming I don't have good projects to present here yet.
+                    <br>
+                    But by the end of the BootCamp (December 2022) this field is going to be on fire. So <strong>stay tuned</strong>.
+                </p>
+            </div>
+        </section>
+        <hr>
+
+
+        <!--Recommended websites-->
+        <section>
+            <h2>Recommendations</h2>
+
+            <div>
+                <label for="websites">Check out this wonderful lists of websites that I think are helpful for a coder:</label>
+                <ul id="websites">
+                    <li>
+                        <a href="https://www.freecodecamp.org" target="_blank">Freecodecamp</a>
+                        where you can learn a lot about Web Developpement.
+                    </li>
+
+                    <li>
+                        <a href="https://www.codewars.com/" target="_blank">Code Wars</a>
+                        where you can solve problems and practice coding in different languages.
+                    </li>
+
+                    <li>
+                        <a href="https://www.speedtyper.dev/" target="_blank">Speed Typer</a>
+                        where you can practice fast typing for coders and compete with others.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+    </body>
+</html>
